@@ -23,6 +23,3 @@ Thumbs.db
 # Model files
 models/*.pkl
 models/*.joblib
-
-# Large datasets
-data/*.csv

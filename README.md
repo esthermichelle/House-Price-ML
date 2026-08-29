@@ -14,9 +14,7 @@ This project uses Machine Learning to:
 ## Dataset
 
 The project uses the Ames Housing Dataset from the Kaggle House Prices competition.
-
-Dataset:
-<https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data>
+[Link](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data)
 
 The dataset contains 79 explanatory features describing residential properties in Ames, Iowa.
 
@@ -128,9 +126,8 @@ The models are compared using F1 Score to study the effect of the number of neig
 house-price-ml/
 │
 ├── data/
-│   ├── train.csv
-│   └── test.csv
-│
+│   └── train.csv
+│   
 ├── notebooks/
 │   └── house_price_ml.ipynb
 │
@@ -217,28 +214,3 @@ Compare
     ↓
 Save
 ```
-
-## Future Improvements
-
-* Feature engineering
-* Cross-validation
-* Hyperparameter tuning
-* Additional regression models
-* Additional classification models
-* RMSLE evaluation for Kaggle-style regression
-* Model deployment
-
-## Technologies
-
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* Matplotlib
-* Seaborn
-* Joblib
-* Jupyter Notebook
-
-## Author
-
-Ester Michelle
