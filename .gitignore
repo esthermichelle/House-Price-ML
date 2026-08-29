@@ -19,7 +19,3 @@ Thumbs.db
 
 # Environment variables
 .env
-
-# Model files
-models/*.pkl
-models/*.joblib
