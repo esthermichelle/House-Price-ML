@@ -1,0 +1,14 @@
+{
+  "model_name": "XGBoost",
+  "cv_rmse": 28971.72,
+  "test_mae": 15036.79,
+  "test_rmse": 24339.21,
+  "test_r2": 0.9228,
+  "n_features": 90,
+  "n_training_samples": 1168,
+  "n_test_samples": 292,
+  "random_state": 42,
+  "cv_folds": 5,
+  "test_size": 0.2,
+  "use_log_target": false
+}
