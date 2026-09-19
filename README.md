@@ -8,12 +8,20 @@ House prices depend on many factors such as property size, overall quality, loca
 
 This project focuses on building a high-performing regression model to predict house `SalePrice`, demonstrating a complete machine learning lifecycle from exploratory data analysis and feature engineering to model selection, hyperparameter tuning, final evaluation, error analysis, and model explainability.
 
+## Deployment
+
+The trained model is deployed as an interactive Streamlit application.
+
+Live Demo:
+
+<https://house-price-ml-prediction.streamlit.app/>
+
 ## Dataset
 
 The project uses the **Ames Housing Dataset** from the Kaggle House Prices competition.
 
 **Dataset:**  
-https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
+<https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data>
 
 The dataset contains **79 explanatory features** describing residential properties in Ames, Iowa.
 
@@ -145,15 +153,15 @@ The preprocessing stage is implemented using a leakage-free combination of `Colu
 
 ### Numerical Features
 
-* Median imputation for genuinely missing numerical values.
-* `RobustScaler` for feature scaling.
-* Robust scaling is used to reduce the influence of extreme values and outliers.
+- Median imputation for genuinely missing numerical values.
+- `RobustScaler` for feature scaling.
+- Robust scaling is used to reduce the influence of extreme values and outliers.
 
 ### Categorical Features
 
-* Semantic missing values are interpreted using domain knowledge where appropriate.
-* Remaining missing categorical values are imputed using the constant value `"Missing"`.
-* Categorical variables are transformed using `OneHotEncoder`.
+- Semantic missing values are interpreted using domain knowledge where appropriate.
+- Remaining missing categorical values are imputed using the constant value `"Missing"`.
+- Categorical variables are transformed using `OneHotEncoder`.
 
 ### Leakage Prevention
 
@@ -196,9 +204,9 @@ The initial 5-fold cross-validation benchmark produced the following results:
 
 The initial benchmark identified **Gradient Boosting** as the strongest model before hyperparameter tuning, achieving:
 
-* CV RMSE: **$25,963.51**
-* CV MAE: **$15,407.17**
-* CV R²: **0.8846**
+- CV RMSE: **$25,963.51**
+- CV MAE: **$15,407.17**
+- CV R²: **0.8846**
 
 The three highest-performing models according to CV RMSE were selected for further hyperparameter tuning:
 
@@ -248,12 +256,12 @@ Model performance is investigated beyond aggregate metrics.
 
 The error-analysis stage examines:
 
-* Residual distributions
-* Actual vs. predicted values
-* Absolute prediction errors
-* Errors across house-price segments
-* High-error observations
-* Model behavior on expensive properties
+- Residual distributions
+- Actual vs. predicted values
+- Absolute prediction errors
+- Errors across house-price segments
+- High-error observations
+- Model behavior on expensive properties
 
 A particular focus is placed on high-value properties because large-price homes can produce substantially larger absolute prediction errors.
 
@@ -289,6 +297,7 @@ house-price-ml/
 │       └── target_distribution.png
 │
 ├── README.md
+├── app.py
 └── requirements.txt
 ```
 
@@ -363,4 +372,3 @@ reports/figures/
 ```
 
 The generated figures include exploratory-analysis and model-comparison visualizations.
-
